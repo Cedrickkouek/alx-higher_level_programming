@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-class Square:
-    def __init__(self, side_length):
-        self.side_length = side_length
+def square_matrix(matrix=[]):
+    new_matrix = [[x ** 2 for x in row] for row in matrix]
+    return new_matrix
