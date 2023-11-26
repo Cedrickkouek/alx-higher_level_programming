@@ -1,0 +1,53 @@
+====================
+add_integer.py tests
+====================
+
+.. module:: add_integer
+   :synopsis: def add_integer(a, b=98):
+        a and b must be integers or floats, otherwise raise a TypeError 
+        exception with the message a must be an integer or b must be an integer
+        a and b must be first casted to integers if they are float
+        Returns an integer: the addition of a and b
+        You are not allowed to import any module
+
+.. function:: add_integer(a, b=98)
+
+   A function that adds two integers.
+
+   :param a: The first integer.
+   :type a: int or float
+
+   :param b: The second integer (default is 98).
+   :type b: int or float
+
+   :return: The sum of the two integers.
+   :rtype: int
+
+Test Cases
+----------
+
+.. testcode::
+
+   >>> result = add_integer(3, 5)
+   >>> assert result == 8, f"Expected 8, but got {result}"
+
+.. testcode::
+
+   >>> result = add_integer(-2, 7)
+   >>> assert result == 5, f"Expected 5, but got {result}"
+
+.. testcode::
+
+   >>> result = add_integer(10)
+   >>> assert result == 108, f"Expected 108, but got {result}"
+
+.. testcode::
+
+   >>> result = add_integer(2.5, 3.5)
+   >>> assert result == 6, f"Expected 6, but got {result}"
+
+   # Add more test cases as needed.
+
+.. testoutput::
+
+   This section is optional. You can include additional information related to the test cases, expected output, or any other relevant details.
