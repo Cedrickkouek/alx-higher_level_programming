@@ -1,0 +1,44 @@
+=============================
+How to Use text_indentation
+=============================
+
+This module defines a function ``text_indentation(text)`` that adds newline characters to a text string based on certain punctuation marks.
+
+Usage
+=====
+
+``text_indentation(...)``` prints the input text with additional newlines after periods ('.'), question marks ('?'), and colons (':').
+
+::
+
+    >>> text_indentation("This is a sample text. It has multiple sentences. How does it handle questions: and colons?")
+    This is a sample text.
+
+    It has multiple sentences.
+
+    How does it handle questions: and colons?
+
+Input Requirements
+==================
+
+- `text` must be a string, otherwise, raise a TypeError exception with the message "text must be a string".
+
+::
+
+    >>> text_indentation(123)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+Output
+======
+
+- The function prints the input text with additional newlines after periods ('.'), question marks ('?'), and colons (':').
+
+::
+
+    >>> text_indentation("This is a sample text. It has multiple sentences. How does it handle questions: and colons?")
+    This is a sample text.
+
+    It has multiple sentences.
+
+    How does it handle questions: and colons?

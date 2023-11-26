@@ -1,0 +1,48 @@
+========================
+How to Use print_square
+========================
+
+This module defines a function ``print_square(size)`` that prints a square of '#' characters.
+
+Usage
+=====
+
+``print_square(...)``` prints a square of '#' characters with the specified size.
+
+::
+
+    >>> print_square(3)
+    ###
+    ###
+    ###
+
+Input Requirements
+==================
+
+- `size` must be an integer, otherwise, raise a TypeError exception with the message "size must be an integer".
+
+::
+
+    >>> print_square("invalid_size")
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+- `size` must be greater than or equal to 0, otherwise, raise a ValueError exception with the message "size must be >= 0".
+
+::
+
+    >>> print_square(-1)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
+
+Output
+======
+
+- The function prints a square of '#' characters with the specified size.
+
+::
+
+    >>> print_square(3)
+    ###
+    ###
+    ###
