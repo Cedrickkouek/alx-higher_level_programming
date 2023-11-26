@@ -47,7 +47,3 @@ Test Cases
    >>> assert result == 6, f"Expected 6, but got {result}"
 
    # Add more test cases as needed.
-
-.. testoutput::
-
-   This section is optional. You can include additional information related to the test cases, expected output, or any other relevant details.
